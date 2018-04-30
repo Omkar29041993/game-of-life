@@ -1,7 +1,7 @@
 node()
 {
     stage "Checkout Code"
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/maheshkharwadkar/game-of-life.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Omkar29041993/game-of-life.git']]])
     
     stage "build java project"
         sh 'cd /var/lib/jenkins/workspace/game-of-life-Pipeline'
